@@ -3,10 +3,17 @@ Description
 
 Installs and configures the eLearning environment moodle
 
-Requirements
-============
+Requirements & Dependencies
+===========================
 
 Chef 0.10.10+.
+
+Cookbooks:
+
+* apache2 
+* php 
+* git 
+* database
 
 Platform
 --------
