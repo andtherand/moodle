@@ -1,0 +1,7 @@
+#include_recipe 'moodle::php_modules'
+include_recipe 'moodle::db'
+include_recipe 'moodle::folders'
+include_recipe 'moodle::checkout'
+include_recipe 'moodle::app'
+include_recipe 'moodle::config'
+include_recipe 'moodle::install'
