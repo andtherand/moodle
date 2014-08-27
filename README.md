@@ -19,9 +19,11 @@ Attributes
 Where is the base moodle repository?
 And which version do you want to checkout?
 
+```
 default[:moodle][:repository] = "https://github.com/moodle/moodle.git"
 default[:moodle][:branch] = "MOODLE_26_STABLE"
 default[:moodle][:https] = false
+```
 
 Database settings:
 
