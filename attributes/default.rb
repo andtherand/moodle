@@ -15,7 +15,7 @@ default[:moodle][:dbport] = ""
 default[:moodle][:dbuser] = 'mdl_db_user'
 default[:moodle][:dbpass] = 'I_really_should_be_changed,man!'
 default[:moodle][:dbname] = 'moodle'
-default[:moodle][:passwordsaltmain] = 'Er-zxpsd<$lwl1&el-$*C~`Sv<NE4z:h9sL&pJ!0+7HfZtSbp(mCdKBk:vb|309.'
+default[:moodle][:passwordsaltmain] = 'SomeREALLYRandomSalt12093745012asdadhkd'
 
 default[:moodle][:directorypermissions] = 02777
 default[:moodle][:admin] = 'admin'
