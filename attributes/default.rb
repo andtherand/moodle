@@ -1,5 +1,5 @@
-default[:moodle][:repository] = "https://github.com/moodle/moodle.git"
-default[:moodle][:branch] = "MOODLE_26_STABLE"
+default[:moodle][:repository] = "git://git.moodle.org/moodle.git"
+default[:moodle][:branch] = "master"
 default[:moodle][:https] = false
 
 default[:moodle][:dbtype] = "mysqli"

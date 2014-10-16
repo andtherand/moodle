@@ -10,9 +10,9 @@ Chef 0.10.10+.
 
 Cookbooks:
 
-* apache2 
-* php 
-* git 
+* apache2
+* php
+* git
 * database
 
 Platform
@@ -27,8 +27,8 @@ Where is the base moodle repository?
 And which version do you want to checkout?
 
 ```ruby
-default[:moodle][:repository] = "https://github.com/moodle/moodle.git"
-default[:moodle][:branch] = "MOODLE_26_STABLE"
+default[:moodle][:repository] = "git://git.moodle.org/moodle.git"
+default[:moodle][:branch] = "master"
 default[:moodle][:https] = false
 ```
 
