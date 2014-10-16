@@ -1,19 +1,20 @@
-<?PHP
+<?php
 
 unset($CFG);  // Ignore this line
 global $CFG;  // This is necessary here for PHPUnit execution
+
 $CFG = new stdClass();
-$CFG->dbtype    = '<%= @params[:dbtype] %>';      // 'pgsql', 'mysqli', 'mssql', 'sqlsrv' or 'oci'
-$CFG->dblibrary = '<%= @params[:dblibrary] %>';     // 'native' only at the moment
+$CFG->dbtype    = '<%= @params[:db_type] %>';      // 'pgsql', 'mysqli', 'mssql', 'sqlsrv' or 'oci'
+$CFG->dblibrary = '<%= @params[:db_library] %>';     // 'native' only at the moment
 $CFG->dbhost    = '<%= @params[:host] %>';  // eg 'localhost' or 'db.isp.com' or IP
-$CFG->dbname    = '<%= @params[:dbname] %>';     // database name, eg moodle
-$CFG->dbuser    = '<%= @params[:dbuser] %>';   // your database username
-$CFG->dbpass    = '<%= @params[:dbpass] %>';   // your database password
+$CFG->dbname    = '<%= @params[:db_name] %>';     // database name, eg moodle
+$CFG->dbuser    = '<%= @params[:db_user] %>';   // your database username
+$CFG->dbpass    = '<%= @params[:db_pass] %>';   // your database password
 $CFG->prefix    = '<%= @params[:prefix] %>';       // prefix to use for all table names
 $CFG->dboptions = array(
-    'dbpersist' => <%= @params[:dbpersist] %>,
-    'dbsocket'  => <%= @params[:dbsocket] %>,
-    'dbport'    => '<%= @params[:dbport] %>',
+    'dbpersist' => <%= @params[:db_persist] %>,
+    'dbsocket'  => <%= @params[:db_socket] %>,
+    'dbport'    => '<%= @params[:db_port] %>',
 );
 
 $CFG->wwwroot   = '<%= @params[:wwwroot] %>';
