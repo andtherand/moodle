@@ -17,7 +17,7 @@ default[:moodle][:dbpass] = 'I_really_should_be_changed,man!'
 default[:moodle][:dbname] = 'moodle'
 default[:moodle][:passwordsaltmain] = 'SomeREALLYRandomSalt12093745012asdadhkd'
 
-default[:moodle][:directorypermissions] = 02777
+default[:moodle][:directorypermissions] = '02777'.to_i(8)
 default[:moodle][:admin] = 'admin'
 
 default[:moodle][:project][:log_level] = 'warn'
