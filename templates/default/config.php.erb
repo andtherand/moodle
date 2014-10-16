@@ -4,25 +4,25 @@ unset($CFG);  // Ignore this line
 global $CFG;  // This is necessary here for PHPUnit execution
 
 $CFG = new stdClass();
-$CFG->dbtype    = '<%= @params[:db_type] %>';      // 'pgsql', 'mysqli', 'mssql', 'sqlsrv' or 'oci'
-$CFG->dblibrary = '<%= @params[:db_library] %>';     // 'native' only at the moment
-$CFG->dbhost    = '<%= @params[:host] %>';  // eg 'localhost' or 'db.isp.com' or IP
-$CFG->dbname    = '<%= @params[:db_name] %>';     // database name, eg moodle
-$CFG->dbuser    = '<%= @params[:db_user] %>';   // your database username
-$CFG->dbpass    = '<%= @params[:db_pass] %>';   // your database password
-$CFG->prefix    = '<%= @params[:prefix] %>';       // prefix to use for all table names
+$CFG->dbtype    = '<%= @db_type %>';      // 'pgsql', 'mysqli', 'mssql', 'sqlsrv' or 'oci'
+$CFG->dblibrary = '<%= @db_library %>';     // 'native' only at the moment
+$CFG->dbhost    = '<%= @host %>';  // eg 'localhost' or 'db.isp.com' or IP
+$CFG->dbname    = '<%= @db_name %>';     // database name, eg moodle
+$CFG->dbuser    = '<%= @db_user %>';   // your database username
+$CFG->dbpass    = '<%= @db_pass %>';   // your database password
+$CFG->prefix    = '<%= @prefix %>';       // prefix to use for all table names
 $CFG->dboptions = array(
-    'dbpersist' => <%= @params[:db_persist] %>,
-    'dbsocket'  => <%= @params[:db_socket] %>,
-    'dbport'    => '<%= @params[:db_port] %>',
+    'dbpersist' => <%= @db_persist %>,
+    'dbsocket'  => <%= @db_socket %>,
+    'dbport'    => '<%= @db_port %>',
 );
 
-$CFG->wwwroot   = '<%= @params[:wwwroot] %>';
-$CFG->dataroot  = '<%= @params[:dataroot] %>';
+$CFG->wwwroot   = '<%= @wwwroot %>';
+$CFG->dataroot  = '<%= @dataroot %>';
 
-$CFG->passwordsaltmain = '<%= @params[:passwordsaltmain] %>';
+$CFG->passwordsaltmain = '<%= @passwordsaltmain %>';
 
-$CFG->directorypermissions = <%= @params[:directorypermissions] %>;
-$CFG->admin = '<%= @params[:admin] %>';
+$CFG->directorypermissions = <%= @directorypermissions %>;
+$CFG->admin = '<%= @admin %>';
 
 require_once dirname(__FILE__) . '/lib/setup.php'; // Do not edit
