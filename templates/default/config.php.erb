@@ -3,7 +3,6 @@
 unset($CFG);  // Ignore this line
 global $CFG;  // This is necessary here for PHPUnit execution
 $CFG = new stdClass();
-
 $CFG->dbtype    = '<%= @params[:dbtype] %>';      // 'pgsql', 'mysqli', 'mssql', 'sqlsrv' or 'oci'
 $CFG->dblibrary = '<%= @params[:dblibrary] %>';     // 'native' only at the moment
 $CFG->dbhost    = '<%= @params[:host] %>';  // eg 'localhost' or 'db.isp.com' or IP
