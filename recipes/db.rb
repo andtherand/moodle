@@ -1,6 +1,6 @@
 include_recipe 'database::mysql'
 
-db = node[:moodle][:db]
+db = node[:moodle]
 
 service "mysql" do
   action :start
