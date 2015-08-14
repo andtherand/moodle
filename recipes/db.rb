@@ -1,5 +1,3 @@
-include_recipe 'database'
-
 db = node[:moodle]
 
 service "mysql[default]" do
