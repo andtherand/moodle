@@ -1,9 +1,5 @@
 db = node[:moodle]
 
-service "mysql[default]" do
-  action :start
-end
-
 mysql_connection_info = {
     :host => node[:moodle][:host],
     :username => 'root',
