@@ -1,8 +1,8 @@
-include_recipe 'database::mysql'
+include_recipe 'database'
 
 db = node[:moodle]
 
-service "mysql" do
+service "mysql[default]" do
   action :start
 end
 
