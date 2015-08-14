@@ -9,12 +9,12 @@ default[:moodle][:prefix] = 'mdl_'
 
 default[:moodle][:dbtype] = 'mysqli'
 default[:moodle][:dbpersist] = 'false'
+default[:moodle][:dbsocket] = 'false'
 default[:moodle][:dblibrary] = 'native'
 default[:moodle][:dbport] = ''
 default[:moodle][:dbuser] = 'mdl_db_user'
 default[:moodle][:dbpass] = 'I_really_should_be_changed,man!'
 default[:moodle][:dbname] = 'moodle'
-default[:moodle][:dbsocket] = '/var/run/mysql-default/mysqld.sock'
 default[:moodle][:passwordsaltmain] = 'SomeREALLYRandomSalt12093745012asdadhkd'
 
 default[:moodle][:directorypermissions] = '02755'
